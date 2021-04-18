@@ -1,0 +1,13 @@
+version: "3"
+services:
+  app:
+    build: .
+    container_name: multiple-app 
+    ports:
+    - "81:80" 
+    volumes:
+    - /home/ubuntu/code/app1:/usr/share/nginx/html/app1
+    - /home/ubuntu/code/app2:/usr/share/nginx/html/app2
+    - /home/ubuntu/code/app3:/usr/share/nginx/html/app3
+    - /home/ubuntu/code/app4:/usr/share/nginx/html/app4
+    - /home/ubuntu/code/app5:/usr/share/nginx/html/app5
